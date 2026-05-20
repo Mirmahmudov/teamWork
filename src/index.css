@@ -1,3 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header button {
+    padding: 10px 25px;
+    border: none;
+    color: #FE390C;
+    background-color: #1A1B1C;
+    border: solid 2px #FE390C;
+}
+.nav{
+    background-color: #151617;
+    
+=======
 * {
   margin: 0;
   padding: 0;
