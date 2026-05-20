@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
@@ -36,4 +37,14 @@ ul {
 .nav{
     background-color: #151617;
     
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
