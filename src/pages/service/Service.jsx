@@ -136,8 +136,8 @@ function Service() {
               <span className="dot"></span>
             </div>
             <div className="navigation-buttons">
-              <button className="nav-btn">&larr;</button>
-              <button className="nav-btn">&rarr;</button>
+              <button className="nav-btn">&larr</button>
+              <button className="nav-btn">&rarr</button>
             </div>
           </div>
         </div>
