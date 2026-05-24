@@ -233,12 +233,12 @@ p {
         gap: 40px;
         max-width: 90%;
     }
-
+    
     .image-container {
         width: 350px;
         height: 350px;
     }
-
+    
     .services-container {
         padding: 40px;
     }
@@ -248,24 +248,24 @@ p {
     .cards-wrapper {
         gap: 15px;
     }
-
+    
     .card {
         padding: 25px;
     }
-
+    
     .testimonial-section {
         gap: 30px;
     }
-
+    
     .image-container {
         width: 300px;
         height: 300px;
     }
-
+    
     .number {
         font-size: 40px;
     }
-
+    
     .title {
         font-size: 1.8rem;
     }
@@ -273,32 +273,32 @@ p {
 
 @media (max-width: 991px) {
     .hero-section {
-        height: 250px;
+        height: 250px; 
     }
-
+    
     .cards-wrapper {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 20px;
     }
-
+    
     .testimonial-section {
         flex-direction: column;
         text-align: center;
         margin: 30px auto;
     }
-
+    
     .image-container {
         width: 100%;
-        max-width: 500px;
+        max-width: 500px; 
         height: 350px;
     }
-
+    
     .header-wrapper {
         justify-content: center;
     }
-
+    
     .pagination {
-        margin-left: 0;
+        margin-left: 0; 
     }
 }
 
@@ -306,32 +306,32 @@ p {
     .services-container {
         padding: 30px 15px;
     }
-
+    
     .headers {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-
+    
     .number {
         font-size: 35px;
         padding-bottom: 10px;
     }
-
+    
     .image-container {
         height: 300px;
     }
-
+    
     .title {
         font-size: 1.5rem;
     }
-
+    
     .quote {
         font-size: 1rem;
     }
-
+    
     .controls {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 20px;
     }
 }
@@ -340,32 +340,37 @@ p {
     .hero-section {
         height: 200px;
     }
-
+    
     .card {
         padding: 20px;
     }
-
+    
     .header-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 10px;
         margin-bottom: 15px;
     }
-
+    
     .number {
         font-size: 28px;
     }
-
+    
     .title {
         font-size: 1.3rem;
     }
-
+    
     .image-container {
         height: 250px;
     }
-
+    
     .nav-btn {
         padding: 8px 12px;
         font-size: 1rem;
     }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
