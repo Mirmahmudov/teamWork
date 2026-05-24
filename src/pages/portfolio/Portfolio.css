@@ -213,7 +213,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 
 .logo-row.justify-center {
@@ -225,6 +225,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .logo-item img {
@@ -467,4 +468,168 @@ h2 {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+
+@media (max-width: 1200px) {
+    .portfolio-grid {
+        gap: 20px;
+    }
+
+    .cta-section,
+    .faq-section {
+        padding: 80px 20px;
+    }
+
+    .logo-row.justify-center {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .section-title,
+    .faq-main-title {
+        font-size: 32px;
+    }
+
+    .cta-content h2,
+    h2 {
+        font-size: 36px;
+    }
+
+    .logo-row {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .portfolio-banner {
+        height: 280px;
+    }
+
+    .portfolio-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .portfolio-arrows {
+        align-self: flex-start;
+    }
+
+    .logo-row {
+        justify-content: center;
+    }
+
+    .logo-item img {
+        height: 35px;
+    }
+
+    .faq-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title,
+    .faq-main-title {
+        font-size: 28px;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .cta-content h2,
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .cta-section {
+        padding: 60px 15px;
+    }
+
+    .faq-section {
+        padding: 50px 15px;
+    }
+
+    .hire-btn,
+    .btn-hire {
+        width: 100%;
+        text-align: center;
+        padding: 16px 20px;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .cta-actions {
+        width: 100%;
+    }
+
+    .faq-header {
+        padding: 20px 15px;
+    }
+
+    .faq-header h3 {
+        font-size: 16px;
+    }
+
+    .faq-body p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-banner {
+        height: 200px;
+    }
+
+    .section-title,
+    .faq-main-title {
+        font-size: 24px;
+    }
+
+    .cta-content h2,
+    h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-card {
+        height: 250px;
+    }
+
+    .portfolio-filters {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .logo-row {
+        gap: 20px;
+    }
+
+    .logo-item img {
+        height: 25px;
+    }
+
+    .faq-header h3 {
+        font-size: 15px;
+        padding-right: 10px;
+    }
 }

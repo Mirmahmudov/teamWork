@@ -7,6 +7,8 @@ import {
   FiChevronUp,
   FiDownload,
 } from "react-icons/fi";
+import { FaArrowDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
   return (
@@ -18,7 +20,7 @@ function Portfolio() {
           <h1 className="background-text">PORTFOLIO</h1>
           <h2 className="main-title">PORTFOLIO</h2>
           <p className="breadcrumbs">
-            Home / <span>Portfolio</span>
+          <Link to="/">Home</Link> / <Link to="/portfolio">Portfolio</Link>
           </p>
         </div>
       </section>
@@ -121,7 +123,7 @@ function Portfolio() {
         <div className="buttons">
           <button className="btn-hire">HIRE ME NOW</button>
           <a href="/path-to-cv.pdf" class="btn-download" download>
-            <i className="icon">↓</i> Download CV
+            <i className="icon"><FaArrowDown /></i> Download CV
           </a>
         </div>
       </section>

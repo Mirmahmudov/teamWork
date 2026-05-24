@@ -12,6 +12,7 @@ import {
 import { FaBasketball, FaLocationDot } from "react-icons/fa6";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -23,7 +24,7 @@ function Contact() {
           <h1 className="background-text">CONTACT</h1>
           <h2 className="main-title">CONTACT</h2>
           <p className="breadcrumbs">
-            Home / <span>Single Portfolio</span>
+            <Link to="/">Home</Link> / <span>Single Portfolio</span>
           </p>
         </div>
       </div>

@@ -2,6 +2,8 @@ import React from "react";
 import "./Service.css";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { IoBarChartSharp } from "react-icons/io5";
+import { FaArrowDown, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Service() {
   return (
@@ -13,19 +15,21 @@ function Service() {
           <h1 className="background-text">Service</h1>
           <h2 className="main-title">Service</h2>
           <p className="breadcrumbs">
-            Home / <span>Portfolio</span>
+            <Link to="/">Home</Link> / <Link to="/service" className="active">Service</Link>
           </p>
         </div>
       </section>
       <section class="services-container">
-        <div class="header">
+        <div class="headers">
           <span class="number">01</span>
           <h2>MY SERVICE</h2>
         </div>
 
         <div class="cards-wrapper">
           <div class="card">
-            <div class="icon">✎</div>
+            <div class="icon">
+                <img src="public/imgs/Edit Square.png" alt="" />
+            </div>
             <h3>UI/UX Design</h3>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -34,7 +38,9 @@ function Service() {
           </div>
 
           <div class="card">
-            <div class="icon">▤</div>
+            <div class="icon">
+                <img src="public/imgs/Category.png" alt="" />
+            </div>
             <h3>Product Design</h3>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -43,7 +49,9 @@ function Service() {
           </div>
 
           <div class="card">
-            <div class="icon">|||</div>
+            <div class="icon">
+                  <img src="public/imgs/Chart.png" alt=""></img>
+            </div>
             <h3>Brand Identity</h3>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -52,7 +60,8 @@ function Service() {
           </div>
 
           <div class="card active">
-            <div class="icon"><IoBarChartSharp /></div>
+            <div class="icon"><img src="public/imgs/Activity.png" alt="" />
+            </div>
             <h3>Website Design</h3>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -103,7 +112,7 @@ function Service() {
         <div className="buttons">
           <button className="btn-hire">HIRE ME NOW</button>
           <a href="/path-to-cv.pdf" class="btn-download" download>
-            <i className="icon">↓</i> Download CV
+            <i className="icon"><FaArrowDown /></i> Download CV
           </a>
         </div>
       </section>
@@ -136,8 +145,8 @@ function Service() {
               <span className="dot"></span>
             </div>
             <div className="navigation-buttons">
-              <button className="nav-btn">&larr</button>
-              <button className="nav-btn">&rarr</button>
+              <button className="nav-btn"><FaArrowLeft/></button>
+              <button className="nav-btn"><FaArrowRight /></button>
             </div>
           </div>
         </div>
