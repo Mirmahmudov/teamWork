@@ -12,62 +12,103 @@ import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="footer">
+    <section className="home_foot">
       <div className="container">
-        <div className="foot">
-          <div className="left">
-            <h1>
-              <span>05</span>contact
-            </h1>
-            <div className="flex">
-              <div className="apps">
-                <FaPhoneAlt />
-                <div className="info">
-                  <h4>Phone</h4>
-                  <p>(219) 555-0114</p>
-                </div>
-              </div>
-              <div className="apps">
-                <MdEmail />
-                <div className="info">
-                  <h4>Email</h4>
-                  <p>robertfox@example.com</p>
-                </div>
-              </div>
-              <div className="apps">
-                <FaLocationDot />
-                <div className="info">
-                  <h4>Address</h4>
-                  <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
-                </div>
+        {/* LEFT */}
+        <div className="home_foot_l">
+          <div className="home_foot_tit">
+            <span>05</span>
+
+            <h1>CONTACT</h1>
+          </div>
+
+          <div className="home_foot_info">
+            <div className="home_foot_item">
+              <img src="./imgs/Call.svg" />
+
+              <div>
+                <h4>Phone</h4>
+                <p>(219) 555-0114</p>
               </div>
             </div>
-            <div className="icons">
-              <FaLinkedin />
-              <FaBasketballBall />
-              <FaInstagram />
-              <FaFacebook />
+
+            <div className="home_foot_item">
+              <img src="./imgs/Message.svg" />
+
+              <div>
+                <h4>Email</h4>
+                <p>robertfox@example.com</p>
+              </div>
+            </div>
+
+            <div className="home_foot_item">
+              <img src="./imgs/location (3) 1.svg" />
+
+              <div>
+                <h4>Address</h4>
+
+                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+              </div>
             </div>
           </div>
-          <div className="right">
-            <h1>
-              I’m always open to discussing <span>product design work</span>or
-              partnership{" "}
-            </h1>
-            <div className="form1">
-              <form action="">
-                <p>Your name*</p>
-                <input type="text" placeholder="Enter your name here" />
-                Email Address*
-                <input type="text" placeholder="Enter your email address" />
-                <p>Message</p>
-                <input type="text" placeholder="Write your message here" />
-              </form>
-            </div>
+
+          <div className="home_foot_soc">
+            <button>
+              <img src="./imgs/Frame (1).svg" />
+            </button>
+
+            <button>
+              <img src="./imgs/Frame (2).svg" />
+            </button>
+
+            <button>
+              <img src="./imgs/Frame (4).svg" />
+            </button>
+
+            <button>
+              <img src="./imgs/Frame (3).svg" />
+            </button>
           </div>
         </div>
+
+        {/* RIGHT */}
+        <div className="home_foot_r">
+          <h2>
+            I’m always open to discussing
+            <span>product design work </span>
+            or partnership
+          </h2>
+
+          <form className="home_form">
+            <div className="home_form_top">
+              <div>
+                <label>Your name*</label>
+
+                <input placeholder="Enter your name here" />
+              </div>
+
+              <div>
+                <label>Email Address*</label>
+
+                <input placeholder="Enter your email address" />
+              </div>
+            </div>
+
+            <div>
+              <label>Message</label>
+
+              <textarea placeholder="Write your message here" />
+            </div>
+
+            <button className="home_send">SEND MESSAGE</button>
+          </form>
+        </div>
       </div>
-    </div>
+
+      <div className="home_copy">
+        Copyright Banana Studio 2022 All Right Reserved
+      </div>
+    </section>
   );
 }
 

@@ -9,32 +9,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
-}
-
-ul {
-  display: flex;
-  gap: 40px;
-}
-
-.header button {
-  padding: 10px 25px;
-  border: none;
-  color: #FE390C;
-  background-color: #1A1B1C;
-  border: solid 2px #FE390C;
-}
-
-.nav {
-  background-color: #151617;
-
-}

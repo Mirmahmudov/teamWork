@@ -1,83 +1,107 @@
 .nav {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
   width: 100%;
-  padding: 20px 0;
-  background: #111;
+  height: 10%;
+  z-index: 1000;
+
+  background: transparent;
+
+  transition: 0.3s;
 }
 
-.container {
-  width: 85%;
-  margin: auto;
+.activeNav{
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 20px rgba(0,0,0,.2);
 }
 
+
+
+/* Oddiy linklar */
+.nav a{
+    color:black;
+    transition:.3s;
+}
+
+
+
+
+/* Scroll bo'lganda active bo'lmaganlar */
+.activeNav a:not(.active){
+    color:white;
+}
+
+
+
+/* Active link rangi */
+.nav .active{
+    color:#fe390c;
+}
 .header {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-}
 
-.header img {
-  width: 120px;
-  cursor: pointer;
-}
+  justify-content: space-between;
 
+  padding: 25px 0;
+}
 .header ul {
   display: flex;
   gap: 40px;
-  list-style: none;
 }
-
 .header ul li a {
   text-decoration: none;
-  color: white;
-  font-size: 18px;
-  transition: .3s;
+  color: rgba(169, 169, 170, 1);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-
 .header ul li a:hover {
-  color: orange;
+  color: rgba(254, 57, 12, 1);
+}
+.header ul li a.active {
+  color: rgba(254, 57, 12, 1);
 }
 
 .header button {
-  padding: 12px 28px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgba(254, 57, 12, 1);
   border: none;
-  border-radius: 8px;
-  background: orange;
-  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
   cursor: pointer;
-  font-size: 16px;
-  transition: .3s;
+  border: 1px solid rgba(254, 57, 12, 1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .header button:hover {
-  transform: translateY(-3px);
-  opacity: .8;
+  background-color: rgba(254, 57, 12, 1);
+  color: white;
+}
+
+.nav_btn_img{
+    display:none;
+    cursor:pointer;
 }
 
 
-/* Active link */
-
-.header ul li .active {
-  color: orange;
-}
-
-
-/* Responsive */
-
-@media (max-width:768px) {
-
-  .header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .header ul {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .header button {
-    width: 100%;
-  }
-
+/* MEDIA */
+@media (max-width:576px){
+    ul li a{
+        display: none;
+    }
+    .nav_btn{
+      display:none;
+    }
+    .nav_btn_img{
+        display:block;
+    }
 }
