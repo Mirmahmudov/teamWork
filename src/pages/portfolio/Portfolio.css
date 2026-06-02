@@ -444,7 +444,14 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
+.breadcrumbs {
+  color: white;
+}
 
+.breadcrumbs a {
+  color: white;
+  text-decoration: none; /* по желанию, чтобы убрать подчеркивание */
+}
 .buttons {
     display: flex;
     flex-direction: column;
