@@ -450,7 +450,7 @@ h2 {
 
 .breadcrumbs a {
   color: white;
-  text-decoration: none; /* по желанию, чтобы убрать подчеркивание */
+  text-decoration: none; 
 }
 .buttons {
     display: flex;
