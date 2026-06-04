@@ -205,6 +205,11 @@ function Service() {
                 </div>
               </div>
             </section>
+               <footer class="mini-footer">
+        <p>
+          Copyright <strong>Banana Studio</strong> 2022 All Right Reserved
+        </p>
+      </footer>
     </div>
   );
 }

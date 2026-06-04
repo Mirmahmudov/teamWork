@@ -20,7 +20,7 @@ function Portfolio() {
           <h1 className="background-text">PORTFOLIO</h1>
           <h2 className="main-title">PORTFOLIO</h2>
           <p className="breadcrumbs">
-          <Link to="/">Home</Link> / <Link to="/portfolio">Portfolio</Link>
+            <Link to="/">Home</Link> / <Link to="/portfolio">Portfolio</Link>
           </p>
         </div>
       </section>
@@ -123,7 +123,10 @@ function Portfolio() {
         <div className="buttons">
           <button className="btn-hire">HIRE ME NOW</button>
           <a href="/path-to-cv.pdf" class="btn-download" download>
-            <i className="icon"><FaArrowDown /></i> Download CV
+            <i className="icon">
+              <FaArrowDown />
+            </i>
+            Download CV
           </a>
         </div>
       </section>
@@ -181,6 +184,11 @@ function Portfolio() {
           </div>
         </div>
       </section>
+      <footer class="mini-footer">
+        <p>
+          Copyright <strong>Banana Studio</strong> 2022 All Right Reserved
+        </p>
+      </footer>
     </div>
   );
 }
